@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"><img src="img/logo.jpg" alt="logo">
+            <div class="name">Taura</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="timeline.html">TIMELINE</a></li>
+                <li><a href="#">MENS</a></li>
+                <li><a href="#">WOMENS</a></li>
+                <li><a href="#">FORM</a></li>
+            </ul>
+        </div>
+        <div class="regform">
+            <h1>information form</h1>
+        </div>
+        <div class="main">
+            <form action="account.html" id="testForm">
+                <br><h2>name</h2>
+                <input type="text" id="firstname" required name="first_name"><br>
+                <label id="firstlabel">first name</label>
+                <input type="text" id="lastname" required name="last_name"><br>
+                <label id="lastlabel">last name</label><br><br>
+
+                <div class="pro"><h2>profession</h2>
+                <input type="text" id="abc" name="profession" placeholder="student/teacher/engineer"></div><br><br>
+
+                <div class="email"><label for="email" id="email">e-mail</label>
+                <input type="text" id="email" required name="email"></div><br><br>
+
+                <div class="bday">
+                    <label for="bday" id="bday">birth date</label>
+                    <input type="date" id="bday" required name="birth_date">
+                </div><br><br>
+
+                <div class="no">
+                    <label for="mobile_no" id="no2">mobile number</label>
+                    <input type="text" id="no" required pattern="[789][0-9]{9}">
+                </div><br><br>
+
+                <div class="state"><h2>state</h2>
+                <select name="state" id="state">
+                    <option disabled="disabled" required selected="selected">select</option>
+                    <option>Maharashtra</option>
+                    <option>Delhi</option>
+                    <option>punjab</option>
+                    <option>haryana</option>
+                    <option>gujrat</option>
+                </select>
+                </div><br><br><br><br>
+
+                <input type="submit" id="submit">
+                <input type="reset" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
